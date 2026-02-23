@@ -1,3 +1,4 @@
+import { Link } from 'expo-router'
 import {
   Button,
   Image,
@@ -30,6 +31,8 @@ export default function Index() {
           }}
           source={require('@/assets/images/icon.png')}
         />
+        <Link href={'/details'}>link to details</Link>
+        <Button title={'Go do details'} />
       </View>
     </ScrollView>
   )
